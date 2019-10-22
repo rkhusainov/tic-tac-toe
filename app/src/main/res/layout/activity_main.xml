@@ -1,13 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <TextView
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerInParent="true"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/topLeftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/buttonSide"
+            android:minHeight="@dimen/buttonSide" />
+
+        <Button
+            android:id="@+id/topCenterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/buttonSide"
+            android:minHeight="@dimen/buttonSide" />
+
+        <Button
+            android:id="@+id/topRightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/buttonSide"
+            android:minHeight="@dimen/buttonSide" />
+
+        <Button
+            android:id="@+id/leftCenterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/buttonSide"
+            android:minHeight="@dimen/buttonSide" />
+
+        <Button
+            android:id="@+id/centerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/buttonSide"
+            android:minHeight="@dimen/buttonSide" />
+
+        <Button
+            android:id="@+id/rightCenterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/buttonSide"
+            android:minHeight="@dimen/buttonSide" />
+
+        <Button
+            android:id="@+id/bottomLeftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/buttonSide"
+            android:minHeight="@dimen/buttonSide" />
+
+        <Button
+            android:id="@+id/bottomCenterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/buttonSide"
+            android:minHeight="@dimen/buttonSide" />
+
+        <Button
+            android:id="@+id/bottomRightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/buttonSide"
+            android:minHeight="@dimen/buttonSide" />
+    </GridLayout>
 
 </LinearLayout>
