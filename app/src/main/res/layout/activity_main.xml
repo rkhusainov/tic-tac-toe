@@ -9,7 +9,6 @@
     <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:columnCount="3">
 
         <Button
@@ -17,7 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minWidth="@dimen/buttonSide"
-            android:minHeight="@dimen/buttonSide" />
+            android:minHeight="@dimen/buttonSide"
+            />
 
         <Button
             android:id="@+id/topCenterButton"
