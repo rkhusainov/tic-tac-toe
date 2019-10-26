@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Tic Tac Toe</string>
+    <string name="restart">RESTART</string>
+    <string name="default_score">0</string>
+    <string name="quit">QUIT</string>
+    <string name="cross">КРЕСТИКИ</string>
+    <string name="circle">НОЛИКИ</string>
+    <string name="draw">НИЧЬЯ</string>
 </resources>
