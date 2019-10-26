@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/result_layout"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
     android:orientation="vertical">
 
     <TextView
@@ -11,21 +12,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="24sp"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:textAppearance="@style/ResultTextAppearance"
         tools:text="WINNER" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/restart"
         android:layout_gravity="center"
-        android:onClick="restartGame"/>
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/result_button_selector"
+        android:onClick="restartGame"
+        android:paddingStart="@dimen/padding_default"
+        android:paddingEnd="@dimen/padding_default"
+        android:text="@string/restart"
+        android:textAppearance="@style/ButtonTextAppearance" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quit"
         android:layout_gravity="center"
-        android:onClick="quitGame"/>
+        android:background="@drawable/result_button_selector"
+        android:onClick="quitGame"
+        android:paddingStart="@dimen/padding_default"
+        android:paddingEnd="@dimen/padding_default"
+        android:text="@string/quit"
+        android:textAppearance="@style/ButtonTextAppearance" />
 
 </LinearLayout>

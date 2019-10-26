@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Tic Tac Toe</string>
-    <string name="restart">RESTART</string>
+    <string name="restart">Заново</string>
     <string name="default_score">0</string>
-    <string name="quit">QUIT</string>
-    <string name="cross">КРЕСТИКИ</string>
-    <string name="circle">НОЛИКИ</string>
-    <string name="draw">НИЧЬЯ</string>
+    <string name="quit">Выход</string>
+    <string name="cross">Крестики</string>
+    <string name="circle">Нолики</string>
+    <string name="draw">Ничья</string>
+    <string name="change_another_box">Выберите другую клетку!</string>
 </resources>

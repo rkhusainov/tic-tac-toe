@@ -5,8 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:padding="@dimen/padding_default">
+    android:padding="@dimen/padding_default"
+    tools:context=".MainActivity">
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -17,90 +17,89 @@
             android:id="@+id/topLeftButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
             android:minWidth="@dimen/buttonSide"
             android:minHeight="@dimen/buttonSide"
-            android:onClick="pushXO"
-            android:background="@drawable/button_stroke"
-            />
+            android:onClick="pushXO" />
 
         <Button
             android:id="@+id/topCenterButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
             android:minWidth="@dimen/buttonSide"
             android:minHeight="@dimen/buttonSide"
-            android:onClick="pushXO"
-            android:background="@drawable/button_stroke"/>
+            android:onClick="pushXO" />
 
         <Button
             android:id="@+id/topRightButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
             android:minWidth="@dimen/buttonSide"
             android:minHeight="@dimen/buttonSide"
-            android:onClick="pushXO"
-            android:background="@drawable/button_stroke"/>
+            android:onClick="pushXO" />
 
         <Button
             android:id="@+id/leftCenterButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
             android:minWidth="@dimen/buttonSide"
             android:minHeight="@dimen/buttonSide"
-            android:onClick="pushXO"
-            android:background="@drawable/button_stroke"/>
+            android:onClick="pushXO" />
 
         <Button
             android:id="@+id/centerButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
             android:minWidth="@dimen/buttonSide"
             android:minHeight="@dimen/buttonSide"
-            android:onClick="pushXO"
-            android:background="@drawable/button_stroke"/>
+            android:onClick="pushXO" />
 
         <Button
             android:id="@+id/rightCenterButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
             android:minWidth="@dimen/buttonSide"
             android:minHeight="@dimen/buttonSide"
-            android:onClick="pushXO"
-            android:background="@drawable/button_stroke"/>
+            android:onClick="pushXO" />
 
         <Button
             android:id="@+id/bottomLeftButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
             android:minWidth="@dimen/buttonSide"
             android:minHeight="@dimen/buttonSide"
-            android:onClick="pushXO"
-            android:background="@drawable/button_stroke"/>
+            android:onClick="pushXO" />
 
         <Button
             android:id="@+id/bottomCenterButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
             android:minWidth="@dimen/buttonSide"
             android:minHeight="@dimen/buttonSide"
-            android:onClick="pushXO"
-            android:background="@drawable/button_stroke"/>
+            android:onClick="pushXO" />
 
         <Button
             android:id="@+id/bottomRightButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_stroke"
             android:minWidth="@dimen/buttonSide"
             android:minHeight="@dimen/buttonSide"
-            android:onClick="pushXO"
-            android:background="@drawable/button_stroke"/>
+            android:onClick="pushXO" />
     </GridLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="32dp">
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tv_cross_count"
@@ -109,21 +108,26 @@
             android:layout_marginEnd="32dp"
             android:drawableTop="@drawable/cross"
             android:gravity="center"
-            android:textSize="24sp"
-            />
+            android:textAppearance="@style/ScoresTextAppearance"
+            tools:text="0"/>
 
         <TextView
             android:id="@+id/tv_circle_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/circle"
-            android:gravity="center"
-            android:textSize="24sp"
             android:layout_alignParentEnd="true"
+            android:drawableTop="@drawable/circle"
+            android:textAppearance="@style/ScoresTextAppearance"
+            android:gravity="center"
+            tools:text="0"
             />
 
-        <include layout="@layout/result_game"
-            android:visibility="gone"/>
+        <include
+            layout="@layout/result_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
 
     </RelativeLayout>
 
